@@ -80,11 +80,19 @@ class Board
 		
 		@@board.each_with_index do |x, i|
 
-			if (@@board[0][0] == symbol && @@board[0][1] == symbol && @@board[0][2] == symbol) || (@@board[1][0] == symbol && @@board[1][1] == symbol && @@board[1][2] == symbol) || (@@board[2][0] == symbol && @@board[2][1] == symbol && @@board[2][2] == symbol)
+			# Horizontal
+			if (@@board[0][0] == symbol && @@board[0][1] == symbol && @@board[0][2] == symbol) ||
+				 (@@board[1][0] == symbol && @@board[1][1] == symbol && @@board[1][2] == symbol) || 
+				 (@@board[2][0] == symbol && @@board[2][1] == symbol && @@board[2][2] == symbol)
 				return true
-			elsif (@@board[0][0] == symbol && @@board[1][0] == symbol && @@board[2][0] == symbol) || (@@board[0][1] == symbol && @@board[1][1] == symbol && @@board[2][1] == symbol) || (@@board[0][2] == symbol && @@board[1][2] == symbol && @@board[2][2] == symbol)
+			# Vertical
+			elsif (@@board[0][0] == symbol && @@board[1][0] == symbol && @@board[2][0] == symbol) || 
+						(@@board[0][1] == symbol && @@board[1][1] == symbol && @@board[2][1] == symbol) || 
+						(@@board[0][2] == symbol && @@board[1][2] == symbol && @@board[2][2] == symbol)
 				return true
-			elsif (@@board[0][0] == symbol && @@board[1][1] == symbol && @@board[2][2] == symbol) || (@@board[0][2] == symbol && @@board[1][1] == symbol && @@board[2][0] == symbol)
+			# Diagonal
+			elsif (@@board[0][0] == symbol && @@board[1][1] == symbol && @@board[2][2] == symbol) || 
+						(@@board[0][2] == symbol && @@board[1][1] == symbol && @@board[2][0] == symbol)
 				return true
 			else
 				return false
@@ -117,7 +125,6 @@ class Computer < Player
 		position = rand(1..9)
 		position
 	end
-
 end
 
 class Human < Player
@@ -171,6 +178,7 @@ class Game
 
 			if Board.validatePosition(position)
 				symbol = pc1.switch_turn
+
 				puts "Juega #{symbol} la PC escogió la posición #{position}"
 				
 				board.update(position, symbol)
@@ -201,6 +209,8 @@ class Game
 			loop do
 				
 				positionPlayer = player1.inputPosition
+
+				# Incluir los && en validate
 
 				if Board.validatePosition(positionPlayer) && positionPlayer.to_i != 0 && positionPlayer <= 9 && positionPlayer > 0
 					board.update(positionPlayer, symbolPlayer)
