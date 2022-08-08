@@ -1,0 +1,21 @@
+1. Crear las combinaciones con las que se puede ganar
+2. Crear jugador - Poner nombre de ambos jugadores - Jugador 1 juega con X y jugador 2 juega con O
+3. Crear el tablero - Mostrar el tablero con el número de las posiciones
+4. Pedir la posición al jugador  1
+    Marcar el tablero con X en la posición seleccionada por el jugador
+    Mostrar nuevamente el tablero con las posiciones faltantes y marcadas
+    Si tiene una combinación ganadora finalizar el juego
+      dar por ganador al jugador 1
+    Si no se tiene combinación ganadora && aun hay posiciones para jugador
+      ir al punto 5
+    Si no hay más posiciones && no hay combinación ganadora
+      declarar empate
+5. Pedir la posición al jugar 2
+    Marcar el tablero con O en la posición seleccionada
+    Mostrar nuevamente el tablero con las posiciones faltantes
+    Si tiene una combinación ganadora finalizar el juego
+      dar por ganador al jugador 1
+    Si no se tiene combinación ganadora && aun hay posiciones para jugador
+      ir al punto 4
+    Si no hay más posiciones && no hay combinación ganadora
+      declarar empate
