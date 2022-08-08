@@ -1,20 +1,12 @@
-# Entregables
+# Entregables: Alejandro Salazar Zapata
 
-__En este repositorio se agregarán los entregables de cada semana__
+Este repositorio contiene todos los entregables mencionados en el respositorio de OOP. Para evitar errores los nombres de los directorios se han acortado pero van de la siguiente manera:
 
 
-# ¿Cuál es la finalidad de este repositorio?
+* **Computer**: _Project: Virtual Computer Codecademy section 9_
+* **Banking**: _Project: Banking on Ruby Codecademy section 10_
+* **Launchschoool**: _Launchschool OOP exercises_
+* **Quizzes5**: _Code Quizzes #5_
+* **Quizzes7**: _Code Quizzes #7_
+* **TicTacToe**: _Project: Tic tac toe_
 
-La idea es que podamos revisar los entregables de una manera organizada, para esto vamos a tener este repositorio en el cual cada uno hará un push y revisaremos su rama con el entregable.
-
-# ¿cómo vamos a trabajar?
-
-Lo que vamos a hacer es:
-- crear una rama desde master/main actualizada de esta forma:
-  - `usuario_git` por ejp: `jairorjuela`
-  - commits claros, cortos, como lo vimmos en la clase
-- Dentro de esa rama vamos a crear la carpeta que corresponda al tema y los retos, por ejp
-  - oop/tic_tact_toe.rb
-- subir un pr y etiquetar en los cambio a juan/jairo
-- Estar pendientes de los cambios sugeridos.
-- Si el entregable es un repositorio debemos subir un archivo con el link del repositorio
